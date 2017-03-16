@@ -11,20 +11,20 @@
 //   }
 // });
 //
-// function getTempPromise(location){
-//   return new Promise (function(resolve, reject){
-//     setTimeout(function(){
-//       resolve(79);
-//       reject('City not found');
-//     },1000);
-//   });
-// }
-//
-// getTempPromise('Jogja').then(function(temp){
-//   console.log('Promise success', temp);
-// },function(err){
-//   console.log('Promise error!', err);
-// });
+function getTempPromise(location){
+  return new Promise (function(resolve, reject){
+    setTimeout(function(){
+      resolve(79);
+      reject('City not found');
+    },1000);
+  });
+}
+
+getTempPromise('Jogja').then(function(temp){
+  console.log('Promise success', temp);
+},function(err){
+  console.log('Promise error!', err);
+});
 
 function addPromise (a, b){
   return new Promise (function (resolve, reject){
