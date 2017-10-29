@@ -5,7 +5,7 @@ var WeatherMessage = ({temp,location}) => {
 
 	return (
 		<div>
-			<p>It is {temp} in {location}</p>
+			<p>It is {temp} celcius degree in {location}</p>
 		</div>
 	)
 }
